@@ -11,7 +11,14 @@
                 font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
                 font-size: 1.3em;
             }
-            section {
+            a {
+                color: rgba(236, 240, 241, 0.9);
+                transition: color 0.2s;
+            }
+            a:hover {
+                color: inherit;
+            }
+            section, footer {
                 padding: 50px 5px;
                 text-align: center;
             }
@@ -41,11 +48,15 @@
             section h2 {
                 margin-top: 0;
             }
-            section .container {
+            section .container, footer .container {
                 display: inline-block;
                 text-align: left;
                 width: 100%;
                 max-width: 650px;
+            }
+            footer .container {
+                text-align: center;
+                font-size: 0.6em;
             }
         </style>
     </head>
@@ -121,5 +132,10 @@
                 </p>
             </div>
         </section>
+        <footer>
+            <div class="container">
+                notif &copy; <a href="http://deranged.dk">deranged.dk</a> 2016
+            </div>
+        </footer>
     </body>
 </html>
