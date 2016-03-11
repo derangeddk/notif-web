@@ -1,74 +1,74 @@
 ---
 layout: default
 ---
-        <section class="intro">
-            <div class="container">
-                <h1>notif\\</h1>
-                <h2>better notifications</h2>
-                <p>
-                    Notifications for mobile devices are way too complicated to get to work.
-                </p>
-                <p>
-                    There is APN for iOS devices and GCM for Android devices&mdash;that means supporting two separate stacks just to send the same notification.
-                    GCM for iOS is the new kid on the block, but it doesn't really solve any problems: the interface for sending a notification to iOS is still different from sending one to Android.
-                </p>
-                <p>
-                    Notifications are anything <em>but</em> client agnostic.
-                    But that's not the only problem.
-                </p>
-                <p>
-                    On the client-side the code to <em>receive notifications</em> is insanely complicated.
-                    Oh, you can figure it out&mdash;but should you really have to set up three different services and blindly copy-paste some code from a tutorial to get to receive your first notification?
-                </p>
-                <p>
-                    There is no low-barrier-of-entry way to receive notifications.
-                    There is no simple on-notification-do-this abstraction.
-                </p>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1>Unified Interface</h1>
-                <h2>client-agnostic</h2>
-                <p>
-                    First step is building an interface for notifications that works no matter the client.
-                    Send one request, any number of recipients, and it <em>just works</em>.
-                </p>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1>User Repository</h1>
-                <h2>abstract away internals</h2>
-                <p>
-                    What is a registration id?
-                    A token?
-                    A notification key?
-                </p>
-                <p>
-                    Do you actually care, or do you just want to <em>receive notifications</em>?
-                </p>
-                <p>
-                    I bet you don't care.
-                    This project will abstract away all of the internal keys used, and let you identify users by the handles you <em>already use</em> in your system.
-                </p>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1>Client Libraries</h1>
-                <h2>less than 4 concepts</h2>
-                <p>
-                    The client-side code for <em>receiving</em> notifications is needlessly complicated.
-                </p>
-                <p>
-                    This project will provide neat abstractions for easily registering and updating registration IDs and listening to notifications.
-                </p>
-                <p>
-                    Being able to do this with less than 4 abstractions, and hopefully without always-identical configuration code would be top notch.
-                </p>
-                <p>
-                    This project should support <em>at least</em> Android and iOS.
-                </p>
-            </div>
-        </section>
+<section class="intro">
+    <div class="container">
+        <h1>notif\\</h1>
+        <h2>better notifications</h2>
+        <p>
+            Notifications for mobile devices are way too complicated to get to work.
+        </p>
+        <p>
+            There is APN for iOS devices and GCM for Android devices&mdash;that means supporting two separate stacks just to send the same notification.
+            GCM for iOS is the new kid on the block, but it doesn't really solve any problems: the interface for sending a notification to iOS is still different from sending one to Android.
+        </p>
+        <p>
+            Notifications are anything <em>but</em> client agnostic.
+            But that's not the only problem.
+        </p>
+        <p>
+            On the client-side the code to <em>receive notifications</em> is insanely complicated.
+            Oh, you can figure it out&mdash;but should you really have to set up three different services and blindly copy-paste some code from a tutorial to get to receive your first notification?
+        </p>
+        <p>
+            There is no low-barrier-of-entry way to receive notifications.
+            There is no simple on-notification-do-this abstraction.
+        </p>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h1>Unified Interface</h1>
+        <h2>client-agnostic</h2>
+        <p>
+            First step is building an interface for notifications that works no matter the client.
+            Send one request, any number of recipients, and it <em>just works</em>.
+        </p>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h1>User Repository</h1>
+        <h2>abstract away internals</h2>
+        <p>
+            What is a registration id?
+            A token?
+            A notification key?
+        </p>
+        <p>
+            Do you actually care, or do you just want to <em>receive notifications</em>?
+        </p>
+        <p>
+            I bet you don't care.
+            This project will abstract away all of the internal keys used, and let you identify users by the handles you <em>already use</em> in your system.
+        </p>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h1>Client Libraries</h1>
+        <h2>less than 4 concepts</h2>
+        <p>
+            The client-side code for <em>receiving</em> notifications is needlessly complicated.
+        </p>
+        <p>
+            This project will provide neat abstractions for easily registering and updating registration IDs and listening to notifications.
+        </p>
+        <p>
+            Being able to do this with less than 4 abstractions, and hopefully without always-identical configuration code would be top notch.
+        </p>
+        <p>
+            This project should support <em>at least</em> Android and iOS.
+        </p>
+    </div>
+</section>
