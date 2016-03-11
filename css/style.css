@@ -11,6 +11,15 @@ a {
 a:hover {
     color: inherit;
 }
+code {
+    font-size: 0.85em;
+    font-family: 'Source Code Pro', Monaco, Consolas, monospace;
+}
+pre {
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    margin: 0 -15px;
+}
 section, footer {
     padding: 50px 5px;
     text-align: center;
@@ -24,11 +33,11 @@ section h1 {
     font-size: 3em;
 }
 section.intro h1 {
-    font-family: "Source Code Pro", Consolas, monospace;
+    font-family: "Source Code Pro", Monaco, Consolas, monospace;
 }
 section:not(.intro) h1:before {
     content: "notif\\\\";
-    font-family: "Source Code Pro", Consolas, monospace;
+    font-family: "Source Code Pro", Monaco, Consolas, monospace;
     font-size: 0.25em;
     display: inline-block;
     vertical-align: top;

@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<section>
+    <div class="container">
+        <h1>Unified Interface</h1>
+        <h2>client-agnostic API</h2>
+        <p>
+            Using GCM for iOS means sending different fields to GCM than when sending notifications to Android devices.
+            With the Unified Interface you don't have to think about this.
+        </p>
+        <p>
+            The Unified Interface provides a simple interface for sending notifications, taking away most of the hassle.
+        </p>
+        <p>
+            Spike0 (first prototype) of the API is live at <a href="http://unified-interface-spike0.notif.deranged.dk:3098/">unified-interface-spike0.notif.deranged.dk:3098</a> and you can read the documentation <a href="https://github.com/derangeddk/notif-unified-interface/blob/master/README.md">on Github</a>.
+        </p>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <p>
+            To get started, register your app with its API key and app-type (<code>"iOS"</code> or <code>"Android"</code>).
+            For example:
+
+            <code><pre>curl -vkX POST http://unified-interface-spike0.notif.deranged.dk:3098/app \
+    --header 'Content-Type: application/json' \
+    --data '{ "apiKey": "yourApiKey", "appType": "Android" }'</pre></code>
+        </p>
+        <p>
+            This returns an <code>appToken</code>, which you will use to send notifications.
+            (Note that you have to replace the <code>apiKey</code> above with your actual API key for the <code>appToken</code> to work.)
+            You need a registration ID for the app to send a notification.
+            Here is an example of a data notification:
+
+            <code><pre>curl -vkX POST http://unified-interface-spike0.notif.deranged.dk:3098/data-notification \
+    --header 'Content-Type: application/json' \
+    --header 'App-Token: YouAppTokenFromBefore' \
+    --data '{ "to": "registrationIdOfYourAppOnTargetDevice",\
+              "type": "test-notification",\
+              "collapse": false,\
+              "data": {"foo": "bar"}}'</pre></code>
+        </p>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <p>
+            The Unified Interface is hosted for free prior to <em>real</em> release.
+            Try it, and remember to pop by the <a href="https://github.com/derangeddk/notif-unified-interface">Github page</a> if you have any issues.
+        </p>
+    </div>
+</section>
