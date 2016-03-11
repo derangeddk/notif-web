@@ -61,3 +61,16 @@ footer .container {
     text-align: center;
     font-size: 0.6em;
 }
+.call-to-action {
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    display: block;
+    margin-top: 50px;
+    padding: 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+.call-to-action:hover {
+    background: rgba(255,255,255,0.2);
+}
